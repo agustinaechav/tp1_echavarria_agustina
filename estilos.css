@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*fonts*/
+@import url("https://use.typekit.net/sus3xuj.css");
+
+@font-face {
+    font-family: "FoundryTiento-Bold";
+    src: url("fonts/FoundryTiento-Bold.otf") format("opentype");
+}
+/*general*/
+
+* {
+    font-family: "ofelia-text", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+body {
+    background-image: url("img/fondo.png");
+        background-size: cover;
+        background-repeat: repeat;
+        height: 100%;
+        margin: 0;
+}
+
+/*header*/
+
+header {
+    height: 368px;
+    background-image: url("img/header-fondo.png");
+        background-size: cover;
+}
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: start; 
+    align-items: center;
+    gap: 75px; 
+}
+
+#foto-perfil {
+    margin-top: 70px;
+    margin-left: 120px;
+    }
+
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: "FoundryTiento-Bold";  
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*main*/
+
+#datos-personales {
+    background-color: #cec8bd 0.1;
+    border: 2px solid #171614;
+    border-radius: 40px;
+    max-width: 1098px;
+    height: 250px;
+    margin: 40px 133px;   
+}
+
+h3 {
+    color: #171614;
+    font-size: 36px;
+    font-family: "FoundryTiento-Bold";
+    margin: 35px 45px 10px 45px;
+}
+
+h3:hover {
+    color: #e78383;
+}
+
+#datos-personales ul {
+    font-size: 20px;
+    margin-left: 45px;
+    margin-bottom: 45px;
+}
+
+#datos-personales ul li {
+    padding-top: 10px
+}
+
+#datos-personales span {
+    font-weight: 700;
+}
