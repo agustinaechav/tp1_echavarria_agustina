@@ -8,12 +8,14 @@
     font-family: "FoundryTiento-Bold";
     src: url("fonts/FoundryTiento-Bold.otf") format("opentype");
 }
+
 /*general*/
 
 * {
     font-family: "ofelia-text", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     padding: 0;
 	margin: 0;
     list-style: none;
@@ -37,10 +39,10 @@ header {
 
 #encabezado {
     display: flex;
-    flex-direction: row;
-    justify-content: start; 
-    align-items: center;
-    gap: 75px; 
+        flex-direction: row;
+        justify-content: start; 
+        align-items: center;
+        gap: 75px; 
 }
 
 #foto-perfil {
@@ -57,19 +59,21 @@ h1 {
 
 h2 {
     color: #ffffff;
-    font-size: 20px;
     margin-top: 10px;
 }
 
 /*main*/
 
-#datos-personales {
+/*section - datos personales*/
+
+.caja-horizontal {
     background-color: #cec8bd 0.1;
-    border: 2px solid #171614;
-    border-radius: 40px;
-    max-width: 1098px;
-    height: 250px;
-    margin: 40px 133px;   
+        border: 2px solid #171614;
+        border-radius: 40px;
+        margin: 40px 134px 24px 134px;
+        width: 1098px;
+        height: 250px;
+       
 }
 
 h3 {
@@ -83,16 +87,204 @@ h3:hover {
     color: #e78383;
 }
 
-#datos-personales ul {
-    font-size: 20px;
+.caja-horizontal ul {
     margin-left: 45px;
     margin-bottom: 45px;
 }
 
-#datos-personales ul li {
+.caja-horizontal ul li {
     padding-top: 10px
 }
 
-#datos-personales span {
+.caja-horizontal span {
     font-weight: 700;
 }
+
+/*section - tres cajas*/
+
+.tres-cajas {
+    display: flex;
+    justify-content:left;
+    gap: 52px;
+}
+
+/*div - mis proyectos*/
+
+.caja-negra-vertical {
+    background-color: #171614;
+    border-radius: 40px;
+    margin: 47px 0px 47px 134px;
+    width: 523px;
+    height: 934px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: "FoundryTiento-Bold";
+    padding-top: 35px;
+}
+
+h4:hover {
+    color: #e78383;
+}
+
+.grupo-proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.proyecto img:hover {
+    transform: scale(1.100);
+}
+
+.info-proyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 15px 25px 0px 25px;
+}
+
+.nombre-proyecto {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    display: inline;
+}
+
+.link-proyecto {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.link-proyecto:hover {
+    color: #e78383;
+}
+
+/*div - experiencia / formacion */
+
+.columna-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 47px 0px 47px 0px;
+}
+
+.caja-transparente {
+    background-color: #cec8bd 0.1;
+    border: 2px solid #171614;
+    border-radius: 40px;
+    width: 523px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.caja-transparente h3 {
+    align-self: center;
+    margin: 35px 45px 0px 45px;
+}
+
+.caja-transparente ol {
+    margin: 35px 0px 0px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px; 
+}
+
+.caja-transparente ol li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.p-bold {
+    font-weight: 700;
+}
+
+.p-italic {
+    font-style: italic;
+}
+
+/* section - herramientas */
+
+.caja-negra-hor {
+    background-color: #171614;
+        border-radius: 40px;
+        margin: 0px 134px 24px 134px;
+        width: 1098px;
+        height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-negra-hor ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 33px;
+    margin-top: 35px;
+}
+
+.caja-negra-hor ul li {
+    transition: transform 0.2s ease-in-out;
+}
+.caja-negra-hor ul li:hover {
+    transform: scale(1.120);
+}
+
+/* section - dos cajas*/
+
+.dos-cajas-hor {
+    display: flex;
+    justify-content: left;
+    margin: 47px 134px;
+    gap: 52px;
+}
+
+/* divisor flores */
+
+.divisor-flores {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 47px;
+    margin-bottom: 47px;
+}
+
+/*footer*/
+
+footer {
+    background-color: #171614;
+    padding-top: 35px;
+    width: 100%;
+    height: 65px;
+}
+
+h5 {
+    color: #e78383;
+    font-size: 16px;
+    margin-right: 75px;
+    display: flex;
+    justify-content: flex-end;
+}
+
