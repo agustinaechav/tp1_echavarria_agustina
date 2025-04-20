@@ -22,57 +22,72 @@
 }
 
 body {
+    width: 100%;
     background-image: url("img/fondo.png");
-        background-size: cover;
-        background-repeat: repeat;
-        height: 100%;
-        margin: 0;
+        background-repeat: repeat;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*header*/
 
 header {
     height: 368px;
+    width: 100%;
     background-image: url("img/header-fondo.png");
-        background-size: cover;
-}
-
-#encabezado {
+    background-repeat: repeat;
     display: flex;
-        flex-direction: row;
-        justify-content: start; 
-        align-items: center;
-        gap: 75px; 
+    justify-content: center; 
+    align-items: center;
+    gap: 75px;
+    color: #ffffff;
 }
 
-#foto-perfil {
+
+.foto-perfil {
     margin-top: 70px;
-    margin-left: 120px;
     }
 
 
 h1 {
-    color: #ffffff;
     font-size: 60px;
     font-family: "FoundryTiento-Bold";  
 }
 
 h2 {
-    color: #ffffff;
-    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.flor-rosa {
+    transition: transform 0.2s ease-in-out;
+}
+
+.flor-rosa:hover {
+    transform: scale(1.200);
 }
 
 /*main*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /*section - datos personales*/
 
 .caja-horizontal {
-    background-color: #cec8bd 0.1;
-        border: 2px solid #171614;
-        border-radius: 40px;
-        margin: 40px 134px 24px 134px;
-        width: 1098px;
-        height: 250px;
+    border: 2px solid #171614;
+    border-radius: 40px;
+    max-width: 1098px;
+    width: 100vw;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
        
 }
 
@@ -80,7 +95,7 @@ h3 {
     color: #171614;
     font-size: 36px;
     font-family: "FoundryTiento-Bold";
-    margin: 35px 45px 10px 45px;
+    padding: 35px 45px 10px 45px;
 }
 
 h3:hover {
@@ -88,8 +103,8 @@ h3:hover {
 }
 
 .caja-horizontal ul {
-    margin-left: 45px;
-    margin-bottom: 45px;
+    padding-left: 45px;
+    padding-bottom: 45px;
 }
 
 .caja-horizontal ul li {
@@ -103,8 +118,11 @@ h3:hover {
 /*section - tres cajas*/
 
 .tres-cajas {
+    padding-top: 24px;
+    padding-bottom: 24px;
     display: flex;
-    justify-content:left;
+    justify-content:center;
+    align-items: center;
     gap: 52px;
 }
 
@@ -113,8 +131,8 @@ h3:hover {
 .caja-negra-vertical {
     background-color: #171614;
     border-radius: 40px;
-    margin: 47px 0px 47px 134px;
-    width: 523px;
+    max-width: 523px;
+    width: 100vw;
     height: 934px;
     display: flex;
     flex-direction: column;
@@ -126,7 +144,7 @@ h4 {
     color: #ffffff;
     font-size: 36px;
     font-family: "FoundryTiento-Bold";
-    padding-top: 35px;
+    padding: 35px 45px 10px 45px;
 }
 
 h4:hover {
@@ -146,7 +164,7 @@ h4:hover {
 }
 
 .proyecto img {
-    transition: transform 0.2s ease-in-out;
+     transition: transform 0.2s ease-in-out;
 }
 
 .proyecto img:hover {
@@ -157,7 +175,7 @@ h4:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 15px 25px 0px 25px;
+    padding: 15px 25px 0px 25px;
 }
 
 .nombre-proyecto {
@@ -185,14 +203,14 @@ h4:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 47px 0px 47px 0px;
+    gap: 48px;
 }
 
 .caja-transparente {
-    background-color: #cec8bd 0.1;
     border: 2px solid #171614;
     border-radius: 40px;
-    width: 523px;
+    max-width: 523px;
+    width: 100vw;
     height: 440px;
     display: flex;
     flex-direction: column;
@@ -200,11 +218,10 @@ h4:hover {
 
 .caja-transparente h3 {
     align-self: center;
-    margin: 35px 45px 0px 45px;
 }
 
 .caja-transparente ol {
-    margin: 35px 0px 0px 45px;
+    padding: 35px 0px 0px 45px;
     display: flex;
     flex-direction: column;
     gap: 55px; 
@@ -229,8 +246,10 @@ h4:hover {
 .caja-negra-hor {
     background-color: #171614;
         border-radius: 40px;
-        margin: 0px 134px 24px 134px;
-        width: 1098px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        max-width: 1098px;
+        width: 100vw;
         height: 250px;
     display: flex;
     flex-direction: column;
@@ -242,7 +261,7 @@ h4:hover {
     flex-direction: row;
     justify-content: center;
     gap: 33px;
-    margin-top: 35px;
+    padding-top: 35px;
 }
 
 .caja-negra-hor ul li {
@@ -256,8 +275,9 @@ h4:hover {
 
 .dos-cajas-hor {
     display: flex;
-    justify-content: left;
-    margin: 47px 134px;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
     gap: 52px;
 }
 
@@ -267,8 +287,8 @@ h4:hover {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 47px;
-    margin-bottom: 47px;
+    padding-top: 56px;
+    padding-bottom: 80px;
 }
 
 /*footer*/
@@ -283,7 +303,7 @@ footer {
 h5 {
     color: #e78383;
     font-size: 16px;
-    margin-right: 75px;
+    padding-right: 75px;
     display: flex;
     justify-content: flex-end;
 }
